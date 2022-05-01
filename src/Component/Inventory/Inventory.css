@@ -1,0 +1,14 @@
+.cars-container{
+          display: grid;
+          grid-template-columns: repeat(3,  1fr);
+          grid-gap: 20px;
+          border-radius: 20px;
+         
+       
+          
+
+}
+.cars-container img{
+          width: 100%;
+          height: 80%;
+}

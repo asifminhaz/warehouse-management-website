@@ -1,0 +1,46 @@
+[
+          {
+             "id" : "1"  ,    
+            "price": "$5624",
+            "discription": "BMW offers the best performance, safety, and quality out of any luxury car brand, giving drivers nearly infinite reason  to buy a BMW as opposed to a vehicle from another manufacturer. Once you own your first BMW, you will never want to own a vehicle from another brand again.",
+            "name": "BMW",
+            "image": "https://images.unsplash.com/photo-1539043776866-20389265e4da?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+
+          },
+          {
+           "id" : "2"  ,          
+            "price": "$5654",
+            "discription": "Audi has a huge fan base around the world, and for good reasons. The Audi brand produces some of the world's highest quality vehicles packed with plenty of innovative and ground-breaking technology. Additionally, with that, they also make some of the best looking vehicles on the road",
+            "name": "Audi",
+            "image": "https://images.unsplash.com/photo-1502161254066-6c74afbf07aa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+          },
+          {
+            "id" : "3"  ,  
+            "price": "$6627",
+            "discription": "Acura has an excellent reputation for reliability. Consumer reports call the brand's vehicles quiet, well-made, and efficient. They get high marks for luxury and handling.",
+            "name": "Acura RSx",
+            "image": "https://images.unsplash.com/photo-1605816988069-b11383b50717?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=888&q=80"
+          },
+          {
+          "id" : "4"  ,  
+            "price": "$7624",
+            "discription": "The strong and global supply chain of Toyota is really one of the greatest strength of this company. High Production Capability– Toyota is giving serious competition to its contemporaries on this point as they have a high production capacity of producing cars,almost 10 million per year.",
+            "name": "Toyota",
+            "image": "https://images.unsplash.com/photo-1547245324-d777c6f05e80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          },
+          {
+           "id" : "5"  ,  
+            "price": "$9654",
+            "discription": "",
+            "name": "Lamborghini",
+            "image": "https://images.unsplash.com/photo-1544829099-b9a0c07fad1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80"
+          },
+          
+          {
+            "id" : "6"  ,  
+            "price": "$8454",
+            "discription": "Hyundai is one of the vehicle brands known to have long-lasting vehicles, says The Drive. It joins Honda, Toyota, Lexus, Ford, and Acura as brands that have reliable vehicles that last a long time.",
+            "name": "Hyundai",
+            "image": "https://images.unsplash.com/photo-1592840062661-a5a7f78e2056?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+          }
+        ]
