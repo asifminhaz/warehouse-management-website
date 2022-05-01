@@ -10,6 +10,7 @@ const SingleInventory = ({car}) => {
                              <p>{discription}</p>
                              <p>Quantity:{quantity}</p>
                              <p>Supplier:{supplier}</p>
+                             <button className='btn btn-success'>Update</button>
                     </div>
           );
 };
