@@ -1,18 +1,40 @@
+// // Import the functions you need from the SDKs you need
+// import { initializeApp } from "firebase/app";
+// import { getAuth} from 'firebase/auth'
+
+// // TODO: Add SDKs for Firebase products that you want to use
+// // https://firebase.google.com/docs/web/setup#available-libraries
+
+// // Your web app's Firebase configuration
+// const firebaseConfig = {
+//   apiKey:process.env.REACT_APP_apiKey ,
+//   authDomain:process.env.REACT_APP_authDomain ,
+//   projectId:process.env.REACT_APP_projectId ,
+//   storageBucket:process.env.REACT_APP_storageBucket ,
+//   messagingSenderId:process.env.REACT_APP_appId ,
+//   appId:process.env.REACT_APP_messagingSenderId
+// };
+
+// // Initialize Firebase
+// const app = initializeApp(firebaseConfig);
+
+// const auth = getAuth(app)
+
+// export default auth;
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getAuth} from 'firebase/auth'
-
+import { getAuth } from "firebase/auth";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey:process.env.REACT_APP_apiKey ,
-  authDomain:process.env.REACT_APP_authDomain ,
-  projectId:process.env.REACT_APP_projectId ,
-  storageBucket:process.env.REACT_APP_storageBucket ,
-  messagingSenderId:process.env.REACT_APP_appId ,
-  appId:process.env.REACT_APP_messagingSenderId
+  apiKey: "AIzaSyABOjjbis48SE-XzB2ffo8DBned309eSkI",
+  authDomain: "motodeal-41ae1.firebaseapp.com",
+  projectId: "motodeal-41ae1",
+  storageBucket: "motodeal-41ae1.appspot.com",
+  messagingSenderId: "176999068877",
+  appId: "1:176999068877:web:edfab48e1de325f31a6584"
 };
 
 // Initialize Firebase
@@ -20,4 +42,4 @@ const app = initializeApp(firebaseConfig);
 
 const auth = getAuth(app)
 
-export default auth;
+export default auth
