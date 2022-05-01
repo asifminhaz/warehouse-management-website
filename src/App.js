@@ -4,6 +4,9 @@ import './App.css';
 import About from './Component/About/About';
 import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
+import LogIn from './Component/LogIn/Login'
+import Blog from './Component/Blog/Blog'
+import NotFound from './Component/NotFound/NotFound'
 
 
 
@@ -15,9 +18,9 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
         <Route path='/about' element={<About></About>}></Route>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/login" element={<LogIn></LogIn>}></Route>
+        <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 
     </div>

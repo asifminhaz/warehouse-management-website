@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { Card, CardGroup, Carousel } from 'react-bootstrap';
 import Inventory from '../Inventory/Inventory';
 import SingleInventory from '../Inventory/SingleInventory/SingleInventory';
+import Services from '../Services/Services';
 import './Home.css'
 
 const Home = () => {
@@ -23,8 +24,8 @@ const Home = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3></h3>
-          <p></p>
+          <h1>Drive Me</h1>
+          <h1>But Fast</h1>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -35,8 +36,9 @@ const Home = () => {
         />
 
         <Carousel.Caption>
-          <h3></h3>
-          <p></p>
+          <h1 >Road and</h1>
+          <h1>track</h1>
+          
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -47,10 +49,7 @@ const Home = () => {
         />
 
         <Carousel.Caption>
-          <h3></h3>
-          <p>
-      
-          </p>
+          <h1>Explore Me</h1>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
@@ -59,6 +58,8 @@ const Home = () => {
           <h3 className='text-center'>Featured Car</h3>
 </div>
 <Inventory></Inventory>
+<h1 className='text-center m-5 '>Our Services</h1>
+<Services></Services>
 
   
 
