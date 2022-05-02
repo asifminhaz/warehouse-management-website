@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useNavigate } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import auth from './firebase.init';
 
 const Login = () => {
@@ -15,7 +16,7 @@ const Login = () => {
                     error,
                   ] = useSignInWithEmailAndPassword(auth);
 if(user){
-          navigate('/home')
+          navigate('/inventoryId')
 }
           const handleSubmit = event => {
                     event.preventDefault();
@@ -51,6 +52,7 @@ if(user){
   </Button>
   <p>New to Motodeal?<Link to='/register' className='text-danger' onClick={navigateRegister}>Please register</Link></p>
 </Form>
+<SocialLogin></SocialLogin>
 
  </div>
           );
