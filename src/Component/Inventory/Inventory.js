@@ -1,23 +1,26 @@
 import React, { useEffect, useState } from 'react';
+import useInventories from '../Hooks/useInventories';
 import SingleInventory from '../Inventory/SingleInventory/SingleInventory';
 import './Inventory.css'
 
 
 const Inventory = () => {
-          const [cars, setCars] = useState([])
+          
+          const [cars, setCars] = useInventories()
 
-          useEffect(() => {
-                    fetch('data.json')
-                    .then(res => res.json())
-                    .then(data => setCars(data))
 
-          },[])
+          // useEffect(() => {
+          //           fetch('data.json')
+          //           .then(res => res.json())
+          //           .then(data => setCars(data))
+
+          // },[])
           return (
-                    <div>
+                   
                               
                               <div className="cars-container">
                               {
-                                        cars.map(car => <SingleInventory
+                                        cars.slice(0, 6).map(car => <SingleInventory
                                         key= {car.id}
                                         car={car}
                                         ></SingleInventory>)
@@ -25,7 +28,7 @@ const Inventory = () => {
                               </div>
                              
                          
-                    </div>
+                   
           );
   };
 export default Inventory;

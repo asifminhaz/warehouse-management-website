@@ -8,6 +8,7 @@ import LogIn from './Component/LogIn/Login'
 import Blog from './Component/Blog/Blog'
 import NotFound from './Component/NotFound/NotFound'
 import Register from './Component/Register/Register';
+import InventoryDetail from './Component/InventoryDetail/InventoryDetail';
 
 
 
@@ -22,6 +23,7 @@ function App() {
         <Route path="/login" element={<LogIn></LogIn>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/inventory/:inventoryId" element={<InventoryDetail></InventoryDetail>}></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
 

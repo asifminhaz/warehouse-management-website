@@ -54,5 +54,59 @@
             "qauantity": "",
             "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
             "image": "https://images.unsplash.com/photo-1592840062661-a5a7f78e2056?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80"
+          },
+          {
+            "id" : "7"  ,  
+            "price": "$9454",
+            "discription": "Model S Plaid has the quickest acceleration of any vehicle in production. Updated battery architecture for all Model S trims enables back-to-back track runs without performance degradation. Model S Plaid has the quickest acceleration of any vehicle in production.",
+            "name": "Tesla model s",
+            "qauantity": "",
+            "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
+            "image": "https://images.unsplash.com/photo-1453491945771-a1e904948959?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          },
+          {
+            "id" : "8"  ,  
+            "price": "$8454",
+            "discription": "Fuel efficiency and range: The BMW i8 returns a certified fuel efficiency of 47.45kmpl and the hybrid sports car has an all-electric range in the range of 25-35km. The i8 can achieve a top speed of up to 120kmph in EV mode. BMW i8 features: The BMW i8 is a premium car and is well equipped as such",
+            "name": "BMW I8",
+            "qauantity": "",
+            "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
+            "image": "https://images.unsplash.com/flagged/photo-1579840947450-eb22b16fa71b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=876&q=80"
+          },
+          {
+            "id" : "9"  ,  
+            "price": "$8454",
+            "discription": "The Ferrari 458 is a seriously good-looking car and it's safe to say that there are few cars out that which deliver more head-turning appeal. Designed by the iconic Italian styling house Pininfarina, the Ferrari 458 looks like everything a supercar should be.",
+            "name": "Ferari 458",
+            "qauantity": "",
+            "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
+            "image": "https://images.unsplash.com/photo-1621687259652-1b680d458fbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          },
+          {
+            "id" : "10"  ,  
+            "price": "$8454",
+            "discription": "The McLaren 720S is a sports car designed and manufactured by British automobile manufacturer McLaren Automotive. It is the second all-new car in the McLaren Super Series, replacing the 650S beginning in May 2017",
+            "name": "McLaren 720s",
+            "qauantity": "",
+            "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
+            "image": "https://images.unsplash.com/photo-1594950195709-a14f66c242d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+          },
+          {
+            "id" : "11"  ,  
+            "price": "$8454",
+            "discription": "The Alpine A110 is a sports car produced by French automobile manufacturer Alpine from 1963 to 1977.The Alpine A110 succeeded the earlier A108.",
+            "name": "Alpine a110",
+            "qauantity": "",
+            "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
+            "image": "https://images.unsplash.com/photo-1650352046310-0f5e404874a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=789&q=80"
+          },
+          {
+            "id" : "12"  ,  
+            "price": "$8454",
+            "discription": "That may seem strange, but to Porsche, the Turbo name is more than a representation of the car's forced induction. Instead, the Turbo name is given to a model's top performance trim. Porsche believes the peppier Taycan deserves the Turbo moniker.",
+            "name": "porsche taycan turbo s",
+            "qauantity": "",
+            "supplier": "Sejong, Duckyang, Hanil Ewha, Donghee, and Seih",
+            "image": "https://images.unsplash.com/photo-1570116474079-f67ad3d5c772?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=979&q=80"
           }
         ]
