@@ -12,6 +12,8 @@ import InventoryDetail from './Component/InventoryDetail/InventoryDetail';
 import RequireAuth from './Component/RequireAuth/RequireAuth';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import UpdateInventory from './Component/Manage Inventory/UpdateInventory';
+import AddItems from './Component/Add items/AddItems';
 
 
 
@@ -26,6 +28,8 @@ function App() {
         <Route path="/login" element={<LogIn></LogIn>}></Route>
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
+        <Route path="/manageInventory" element={<UpdateInventory></UpdateInventory>}></Route>
+        <Route path="/addItem" element={<AddItems></AddItems>}></Route>
         <Route path="/inventory/:inventoryId" element={
           <RequireAuth>
         <InventoryDetail></InventoryDetail>

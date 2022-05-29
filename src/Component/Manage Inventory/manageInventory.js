@@ -4,7 +4,8 @@ import { useState } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import useInventories from '../Hooks/useInventories';
 
-const manageInventory = ({inventory}) => {
+const manageInventory = () => {
+       
 
       
           return (

@@ -2,12 +2,13 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useRef } from 'react';
 import { useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 const InventoryDetail = () => {
           const {inventoryId} = useParams()   
           const [inventory, setInventory] = useState({});
           const quantityRef = useRef(0)
+          const navigate = useNavigate()
           const {_id, name, price, discription, image, qauantity} = inventory
           useEffect(() => {
             const url = `http://localhost:5000/inventories/${inventoryId}`
@@ -16,7 +17,7 @@ const InventoryDetail = () => {
             .then(data => setInventory(data))
   },[])
     
-const deliveryProduct = (id) => {
+ const deliveryProduct = (id) => {
     const newQuantity = qauantity - 1
     console.log(newQuantity)
 
@@ -43,7 +44,9 @@ const deliveryProduct = (id) => {
 
 }
 
-
+const manageInventory = () => {
+    navigate('/manageInventory')
+}
 // stock
 const addQuantity = event => {
     event.preventDefault()
@@ -73,6 +76,8 @@ const addQuantity = event => {
     }
 }
 
+
+
           return (
                     <div>
                         <h2 className='text-center'>WELCOME TO inventory</h2>  
@@ -88,6 +93,10 @@ const addQuantity = event => {
                                    <div className='p-2'>
                                        <input placeholder='Enter Quantity' ref={quantityRef} type="number" name="number" id="" />
                                        <button onClick={addQuantity} className="btn btn-success">stock</button>
+                                   </div>
+                                   <div>
+                                       <button className='btn btn-success' onClick={manageInventory}>Manage Inventory</button>
+
                                    </div>
                                     
 

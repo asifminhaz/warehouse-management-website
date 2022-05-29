@@ -1,25 +1,39 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
+import { useNavigate, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
+import useInventories from '../Hooks/useInventories';
+import Manage from './Manage';
 
 const UpdateInventory = () => {
-
-          // const {inventoryId} = useParams()
-          // const handleDelivered = (id) => {
-          //           const getQuantity = async () => {
-          //                     const newUpdate = {quantity}
-          //                     const url = `http://localhost:5000/inventories/${id}`
-          //                     const data = await axios
-          //           }
-          // }
+const [cars, setCars] = useInventories()
+const navigate = useNavigate()
 
 
+
+useEffect(() => {
+          const url = `http://localhost:5000/inventories`
+          fetch(url)
+          .then(res => res.json())
+          .then(data => setCars(data))
+},[])
+          
+const addItem = () => {
+          navigate('/addItem')
+}
          
           return (
-                    <div>
-                               {/* <button onClick={()=> handleDelivered}>Delivery</button> */}
+                    
 
-<ToastContainer></ToastContainer>
+                    <div>
+                    {
+                              cars.map(car => <Manage
+                              key= {car._id}
+                              car={car}
+                              ></Manage>)
+                    }
+
+                    <button onClick={addItem} className='btn btn-success' >Add Item</button>
                     </div>
           );
 };
