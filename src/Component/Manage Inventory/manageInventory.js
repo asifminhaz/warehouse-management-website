@@ -1,9 +1,15 @@
 import React from 'react';
+import { useEffect } from 'react';
+import { useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import useInventories from '../Hooks/useInventories';
 
-const manageInventory = () => {
+const manageInventory = ({inventory}) => {
+
+      
           return (
                     <div>
-                           <h1>manage your items</h1>   
+                          
                     </div>
           );
 };

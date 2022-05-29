@@ -10,6 +10,8 @@ import NotFound from './Component/NotFound/NotFound'
 import Register from './Component/Register/Register';
 import InventoryDetail from './Component/InventoryDetail/InventoryDetail';
 import RequireAuth from './Component/RequireAuth/RequireAuth';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -31,6 +33,7 @@ function App() {
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
       </Routes>
+      <ToastContainer></ToastContainer>
 
     </div>
   );

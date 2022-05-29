@@ -21,7 +21,7 @@ const Inventory = () => {
                               <div className="cars-container">
                               {
                                         cars.slice(0, 6).map(car => <SingleInventory
-                                        key= {car.id}
+                                        key= {car._id}
                                         car={car}
                                         ></SingleInventory>)
                               }
