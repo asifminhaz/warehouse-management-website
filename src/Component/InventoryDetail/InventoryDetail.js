@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { toast, ToastContainer } from 'react-toastify';
 const InventoryDetail = () => {
+
+    const [reload, setReload] = useState(true)
           const {inventoryId} = useParams()   
           const [inventory, setInventory] = useState({});
           const quantityRef = useRef(0)
@@ -15,7 +17,7 @@ const InventoryDetail = () => {
             fetch(url)
             .then(res => res.json())
             .then(data => setInventory(data))
-  },[])
+  },[inventoryId, reload])
     
 const deliveryProduct = (id) => {
     const newQuantity = qauantity - 1
@@ -34,6 +36,7 @@ const deliveryProduct = (id) => {
                 .then((response) => response.json())
                 .then((json) => {
                       toast(json.success)
+                      setReload(!reload)
                 });
 
     }
@@ -56,7 +59,7 @@ const addQuantity = event => {
           const newQuantity = parseInt(qauantity) + parseInt(addedQuantity)
 
 
-          fetch(`http://localhost:5000/inventory/${inventoryId}`, {
+          fetch(`http://localhost:5000/inventories/${inventoryId}`, {
                 method: 'PUT',
                 body: JSON.stringify({
                       newQuantity
@@ -67,7 +70,11 @@ const addQuantity = event => {
           })
                 .then((response) => response.json())
                 .then((json) => {
+                    
                       toast(json.success)
+
+                      setReload(!reload)
+                      event.target.reset()
                 });
 
     }
