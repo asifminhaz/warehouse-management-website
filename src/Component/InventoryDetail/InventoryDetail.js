@@ -17,7 +17,7 @@ const InventoryDetail = () => {
             .then(data => setInventory(data))
   },[])
     
- const deliveryProduct = (id) => {
+const deliveryProduct = (id) => {
     const newQuantity = qauantity - 1
     console.log(newQuantity)
 

@@ -14,6 +14,8 @@ import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import UpdateInventory from './Component/Manage Inventory/UpdateInventory';
 import AddItems from './Component/Add items/AddItems';
+import Myitems from './Component/My Items/MyItems';
+import Footer from './Component/About/Footer';
 
 
 
@@ -29,15 +31,19 @@ function App() {
         <Route path="/register" element={<Register></Register>}></Route>
         <Route path="/blog" element={<Blog></Blog>}></Route>
         <Route path="/manageInventory" element={<UpdateInventory></UpdateInventory>}></Route>
-        <Route path="/addItem" element={<AddItems></AddItems>}></Route>
+        <Route path="/addItems" element={<AddItems></AddItems>}></Route>
+        <Route path="/myItems" element={<Myitems></Myitems>}></Route>
         <Route path="/inventory/:inventoryId" element={
           <RequireAuth>
         <InventoryDetail></InventoryDetail>
         </RequireAuth>
         }></Route>
         <Route path="*" element={<NotFound></NotFound>}></Route>
+      
       </Routes>
+      <Footer></Footer>
       <ToastContainer></ToastContainer>
+      
 
     </div>
   );

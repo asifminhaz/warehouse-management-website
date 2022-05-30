@@ -5,6 +5,7 @@ import { Card, CardGroup, Carousel } from 'react-bootstrap';
 import Inventory from '../Inventory/Inventory';
 import SingleInventory from '../Inventory/SingleInventory/SingleInventory';
 import Services from '../Services/Services';
+import ExtraPart from './ExtraPart';
 import './Home.css'
 
 const Home = () => {
@@ -60,6 +61,8 @@ const Home = () => {
 <Inventory></Inventory>
 <h1 className='text-center m-5 '>Our Services</h1>
 <Services></Services>
+
+<ExtraPart></ExtraPart>
 
   
 
